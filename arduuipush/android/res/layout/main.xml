@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:weightSum="1" android:id="@+id/main">
+
+    <ListView
+            android:id="@+id/lvdevs"
+            android:layout_width="fill_parent"
+            android:layout_height="423dp"
+            android:dividerHeight="1dp"
+            android:layout_toRightOf="@+id/editText"
+            android:choiceMode="singleChoice" android:layout_above="@+id/PB_SCAN"/>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LE ScanBar"
+                android:id="@+id/PB_SCAN"
+                android:layout_alignParentBottom="true"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Del BarCodes"
+                android:id="@+id/PB_DEL"
+                android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rescan BT"
+                android:id="@+id/_rescan"
+                android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>
+        <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/_scaning" android:layout_below="@+id/lvdevs" android:layout_toRightOf="@+id/PB_SCAN"
+                android:indeterminate="false"/>
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V/H"
+                android:id="@+id/_pl" android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/_scaning" android:layout_toLeftOf="@+id/PB_DEL"
+                android:layout_below="@+id/lvdevs" android:checked="false"/>
+    </LinearLayout>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

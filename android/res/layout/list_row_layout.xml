@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+    <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/nameView" android:layout_row="0" android:layout_column="3"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/stateView" android:layout_row="0" android:layout_column="17"
+                android:textColor="#ff15cfff"/>
+        <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/waiting" android:layout_row="0" android:layout_column="18"
+                android:layout_rowSpan="2"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/macView" android:layout_row="1" android:layout_column="3"
+                android:textColor="#ff36ffc0" android:layout_columnSpan="6"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/leView" android:layout_row="1" android:layout_column="17"
+                android:textColor="#ffe2ff1b"/>
+
+    </GridLayout>
+</RelativeLayout>
